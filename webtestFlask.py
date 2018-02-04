@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# this code initializes an HTML page and hosts it
+
 from flask import Flask
 from flask import render_template
 from tkinter import Tk, Label, Button

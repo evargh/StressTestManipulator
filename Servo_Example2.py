@@ -17,6 +17,7 @@ servoMax = 600  # Max pulse length out of 4096
 
 
 def setServoPulse(channel, pulse):
+    # initializes the frequencies and currents for the servo
     pulseLength = 1000000                   # 1,000,000 us per second
     pulseLength /= 60                       # 60 Hz
     print "%d us per period" % pulseLength

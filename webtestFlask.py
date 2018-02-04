@@ -32,6 +32,21 @@ def setServoPulse(channel, pulse):
 
 pwm.setPWMFreq(60)
 
+def motorTest():
+    pwm.setPWM(0, 0, servoMin)
+    pwm.setPWM(2, 0, servoMin)
+    time.sleep(1)
+    pwm.setPWM(0, 0, 375)
+    pwm.setPWM(2, 0, 375)
+    time.sleep(1)
+    pwm.setPWM(0, 0, servoMax)
+    pwm.setPWM(2, 0, servoMax)
+    time.sleep(1)
+    pwm.setPWM(0, 0, servoMin)
+    pwm.setPWM(2, 0, servoMin)
+    time.sleep(1)
+
+motorTest()
 
 @app.route('/')
 def mypysite(name=None):
@@ -51,54 +66,21 @@ def index():
 
 @app.route('/routine1.html')
 def routine1():
+    motorTest()
     return render_template('routine1.html')
-    pwm.setPWM(0, 0, servoMin)
-    pwm.setPWM(2, 0, servoMin)
-    time.sleep(1)
-    pwm.setPWM(0, 0, 375)
-    pwm.setPWM(2, 0, 375)
-    time.sleep(1)
-    pwm.setPWM(0, 0, servoMax)
-    pwm.setPWM(2, 0, servoMax)
-    time.sleep(1)
-    pwm.setPWM(0, 0, servoMin)
-    pwm.setPWM(2, 0, servoMin)
-    time.sleep(1)
 
 
 @app.route('/routine2.html')
 def routine2():
+    motorTest()
     return render_template('routine2.html')
-    pwm.setPWM(0, 0, servoMin)
-    pwm.setPWM(2, 0, servoMin)
-    time.sleep(1)
-    pwm.setPWM(0, 0, 375)
-    pwm.setPWM(2, 0, 375)
-    time.sleep(1)
-    pwm.setPWM(0, 0, servoMax)
-    pwm.setPWM(2, 0, servoMax)
-    time.sleep(1)
-    pwm.setPWM(0, 0, servoMin)
-    pwm.setPWM(2, 0, servoMin)
-    time.sleep(1)
 
 
 @app.route('/routine3.html')
 def routine3():
+    motorTest()
     return render_template('routine3.html')
-    pwm.setPWM(0, 0, servoMin)
-    pwm.setPWM(2, 0, servoMin)
-    time.sleep(1)
-    pwm.setPWM(0, 0, 375)
-    pwm.setPWM(2, 0, 375)
-    time.sleep(1)
-    pwm.setPWM(0, 0, servoMax)
-    pwm.setPWM(2, 0, servoMax)
-    time.sleep(1)
-    pwm.setPWM(0, 0, servoMin)
-    pwm.setPWM(2, 0, servoMin)
-    time.sleep(1)
-
+    
 
 if __name__ == "__main__":
     # hosts the site locally

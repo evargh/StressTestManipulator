@@ -14,4 +14,5 @@ def mypysite(name=None):
 
 
 if __name__ == "__main__":
+    # hosts the site locally
     app.run('0.0.0.0')

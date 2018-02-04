@@ -49,24 +49,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/routine0.html')
-def routine0():
-    return render_template('routine0.html')
-#    pwm.setPWM(0, 0, servoMin)
-#    pwm.setPWM(2, 0, servoMin)
-#    time.sleep(1)
-#    pwm.setPWM(0, 0, 375)
-#    pwm.setPWM(2, 0, 375)
-#    time.sleep(1)
-#    pwm.setPWM(0, 0, servoMax)
-#    pwm.setPWM(2, 0, servoMax)
-#    time.sleep(1)
-#    pwm.setPWM(0, 0, servoMin)
-#    pwm.setPWM(2, 0, servoMin)
-#    time.sleep(1)
-
-
-@app.route('/routine2.html')
+@app.route('/routine1.html')
 def routine1():
     return render_template('routine1.html')
 #    pwm.setPWM(0, 0, servoMin)
@@ -83,9 +66,26 @@ def routine1():
 #    time.sleep(1)
 
 
-@app.route('/routine3.html')
+@app.route('/routine2.html')
 def routine2():
     return render_template('routine2.html')
+#    pwm.setPWM(0, 0, servoMin)
+#    pwm.setPWM(2, 0, servoMin)
+#    time.sleep(1)
+#    pwm.setPWM(0, 0, 375)
+#    pwm.setPWM(2, 0, 375)
+#    time.sleep(1)
+#    pwm.setPWM(0, 0, servoMax)
+#    pwm.setPWM(2, 0, servoMax)
+#    time.sleep(1)
+#    pwm.setPWM(0, 0, servoMin)
+#    pwm.setPWM(2, 0, servoMin)
+#    time.sleep(1)
+
+
+@app.route('/routine3.html')
+def routine3():
+    return render_template('routine3.html')
 #    pwm.setPWM(0, 0, servoMin)
 #    pwm.setPWM(2, 0, servoMin)
 #    time.sleep(1)

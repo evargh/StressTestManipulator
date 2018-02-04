@@ -13,6 +13,14 @@ def mypysite(name=None):
     # return the html page i already made
     return render_template('index.html')
 
+@app.route('/about.html')
+def about():
+    return render_template('about.html')
+
+@app.route('index.html')
+def index():
+    return render_template('index.html')
+
 
 if __name__ == "__main__":
     # hosts the site locally

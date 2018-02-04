@@ -4,7 +4,6 @@
 
 from flask import Flask
 from flask import render_template
-from tkinter import Tk, Label, Button
 
 app = Flask(__name__)
 

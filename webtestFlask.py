@@ -32,6 +32,7 @@ def setServoPulse(channel, pulse):
 
 pwm.setPWMFreq(60)
 
+
 def motorTest():
     pwm.setPWM(0, 0, servoMin)
     pwm.setPWM(2, 0, servoMin)
@@ -46,7 +47,6 @@ def motorTest():
     pwm.setPWM(2, 0, servoMin)
     time.sleep(1)
 
-motorTest()
 
 @app.route('/')
 def mypysite(name=None):
@@ -80,7 +80,7 @@ def routine2():
 def routine3():
     motorTest()
     return render_template('routine3.html')
-    
+
 
 if __name__ == "__main__":
     # hosts the site locally

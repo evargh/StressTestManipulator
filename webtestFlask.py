@@ -48,6 +48,9 @@ def motorTest():
     time.sleep(1)
 
 
+motorTest()
+
+
 @app.route('/')
 def mypysite(name=None):
     # return the html page i already made

@@ -18,7 +18,7 @@ servoMin = 150  # Min pulse length out of 4096
 servoMax = 600  # Max pulse length out of 4096
 
 # Servo 0 Range - 150 to 600
-# Servo 1 Range - Untested
+# Servo 1 Range - Will Test Later
 # Servo 2 Range - 150 - 600
 # Servo 3 Range - 150 - 375
 

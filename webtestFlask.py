@@ -70,16 +70,19 @@ def index():
 @app.route('/routine1.html')
 def routine1():
     return motorTest()
+    return render_template('routine1.html')
 
 
 @app.route('/routine2.html')
 def routine2():
     return motorTest()
+    return render_template('routine2.html')
 
 
 @app.route('/routine3.html')
 def routine3():
     return motorTest()
+    return render_template('routine3.html')
 
 
 if __name__ == "__main__":

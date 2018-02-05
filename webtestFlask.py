@@ -17,6 +17,11 @@ pwm = PWM(0x40)
 servoMin = 150  # Min pulse length out of 4096
 servoMax = 600  # Max pulse length out of 4096
 
+# Servo 0 Range - 150 to 600
+# Servo 1 Range - Untested
+# Servo 2 Range - 150 - 600
+# Servo 3 Range - 150 - 375
+
 
 def setServoPulse(channel, pulse):
     # initializes the frequencies and currents for the servo

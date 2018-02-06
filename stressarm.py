@@ -62,11 +62,6 @@ def mypysite(name=None):
     return render_template('index.html')
 
 
-@app.route('/runroutines.html')
-def about():
-    return render_template('runroutines.html')
-
-
 @app.route('/index.html')
 def index():
     return render_template('index.html')

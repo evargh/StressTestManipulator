@@ -1,6 +1,4 @@
-# stressarm
-this is where i work on the slider gui
+# Stress Test Manipulator
+This branch involves the code used for a slider GUI.
 
-an arm that stresses
-
-coded in python, uses both the flask framework and adafruit's servo library for raspi
+Coded in Python. Uses both the Flask microframework and Adafruit's servo library for Raspi.

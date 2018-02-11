@@ -39,17 +39,17 @@ pwm.setPWMFreq(60)
 
 
 def motorTest():
-    pwm.setPWM(0, 0, servoMin)
-    pwm.setPWM(2, 0, servoMin)
+    # pwm.setPWM(0, 0, servoMin)
+    pwm.setPWM(3, 0, servoMin)
     time.sleep(1)
-    pwm.setPWM(0, 0, 375)
-    pwm.setPWM(2, 0, 375)
+    # pwm.setPWM(0, 0, 375)
+    pwm.setPWM(3, 0, 375)
     time.sleep(1)
-    pwm.setPWM(0, 0, servoMax)
-    pwm.setPWM(2, 0, servoMax)
+    # pwm.setPWM(0, 0, servoMax)
+    pwm.setPWM(3, 0, servoMax)
     time.sleep(1)
-    pwm.setPWM(0, 0, servoMin)
-    pwm.setPWM(2, 0, servoMin)
+    # pwm.setPWM(0, 0, servoMin)
+    pwm.setPWM(3, 0, servoMin)
     time.sleep(1)
 
 

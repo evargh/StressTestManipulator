@@ -52,6 +52,11 @@ def motorTest():
     pwm.setPWM(2, 0, servoMin)
     time.sleep(1)
 
+def toeRoutine():
+    pwm.setPWM(1, 0, 200)
+    pwm.setPWM(3, 0, 175)
+
+
 
 motorTest()
 
